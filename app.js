@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded());
 app.use(express.json())
 app.use(express.static(__dirname + '/public'));
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const mongodbUrl = 'mongodb://localhost:27017';
 const mongoAtlasUrl = 'mongodb+srv://admin-ks:Test123@cluster0.hwkda.mongodb.net';
