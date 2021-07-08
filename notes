@@ -1,0 +1,29 @@
+- get data from route name 
+
+app.get('/category/:categoryName', function(req,res) {
+    const categoryName = _.lowerCase(req.params.categoryName);
+    console.log(categoryName);
+})
+
+
+** MONGO **
+
+- delete collection
+collection.drop()
+
+-find item
+collection.findOne( query )
+
+- findOneAndUpdate( 
+    {condition}, 
+    {updates}, 
+    function(err, results){}
+    )
+
+
+
+**** Mongo Atlas****
+
+connecting to db
+mongo "mongodb+srv://cluster0.hwkda.mongodb.net/<db-name>" --username <username>
+
